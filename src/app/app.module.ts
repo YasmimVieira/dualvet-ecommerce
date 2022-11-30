@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardComponent } from './components/card/card.component';
 import { ButtonComponent } from './components/button/button.component';
+import { AuthenticationModule } from './modules/authentication/authentication.module';
+import { EcommerceModule } from './modules/ecommerce/ecommerce.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ButtonComponent } from './components/button/button.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthenticationModule,
+    EcommerceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
