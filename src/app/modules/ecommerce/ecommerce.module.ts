@@ -5,13 +5,15 @@ import { EcommerceRoutingModule } from './ecommerce-routing.module';
 import { EcommerceComponent } from './ecommerce.component';
 import { EcommerceDetailsComponent } from './ecommerce-details/ecommerce-details.component';
 import { EcommercePaymentsComponent } from './ecommerce-payments/ecommerce-payments.component';
+import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     EcommerceComponent,
     EcommerceDetailsComponent,
-    EcommercePaymentsComponent
+    EcommercePaymentsComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
