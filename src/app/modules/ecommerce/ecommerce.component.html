@@ -1,3 +1,12 @@
 <section class="product">
     <app-navbar></app-navbar>
+    <h1>Todos produtos para seu pet</h1>
+    <section class="product__list">
+        <section class="card" *ngFor="let product of products">
+            <img src="./../../../assets/petlove.webp" alt="" class="card__image">
+            <p class="card__description">{{ product.productName }}</p>
+            <p class="card__description">{{ product.productPrice | currency:'BRL' }}</p>
+            <button class="card__button" (click)="selectedProduct(product._id)">Comprar</button>
+        </section>
+    </section>
 </section>

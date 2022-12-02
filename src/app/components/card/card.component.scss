@@ -1,0 +1,26 @@
+@import '../../../assets/css/variables.scss';
+
+.card {
+    height: auto;
+    width: 10%;
+    text-align: center;
+    border: 2px solid $yellow;
+    padding: 1rem;
+    border-radius: 5px;
+
+    &__description {
+        font-size: 0.9rem;
+    }
+
+    &__image {
+        width: 50%;
+        height: 50%;
+    }
+
+    &__button {
+        background-color: $yellow-dark;
+        border: none;
+        padding: 0.9rem;
+        border-radius: 5px;
+    }
+}
