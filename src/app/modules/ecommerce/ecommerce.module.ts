@@ -7,6 +7,7 @@ import { EcommerceDetailsComponent } from './ecommerce-details/ecommerce-details
 import { EcommercePaymentsComponent } from './ecommerce-payments/ecommerce-payments.component';
 import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
 import { CardComponent } from 'src/app/components/card/card.component';
+import { EcommerceShopcartComponent } from './ecommerce-shopcart/ecommerce-shopcart.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CardComponent } from 'src/app/components/card/card.component';
     EcommerceDetailsComponent,
     EcommercePaymentsComponent,
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    EcommerceShopcartComponent
   ],
   imports: [
     CommonModule,

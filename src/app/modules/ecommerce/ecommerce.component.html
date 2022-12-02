@@ -6,7 +6,7 @@
             <img src="./../../../assets/petlove.webp" alt="" class="card__image">
             <p class="card__description">{{ product.productName }}</p>
             <p class="card__description">{{ product.productPrice | currency:'BRL' }}</p>
-            <button class="card__button" (click)="selectedProduct(product._id)">Comprar</button>
+            <button class="card__button" (click)="selectedProduct(product)">Comprar</button>
         </section>
     </section>
 </section>

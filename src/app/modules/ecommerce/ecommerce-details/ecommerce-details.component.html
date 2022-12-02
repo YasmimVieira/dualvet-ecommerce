@@ -1,1 +1,18 @@
-<p>ecommerce-details works!</p>
+<app-navbar></app-navbar>
+
+<section class="details">
+
+    <section class="details__product">
+        <div class="details__product__img">
+            <img src="./../../../../assets/petlove.webp" alt="">
+
+            <h3>Detalhes do Produto</h3>
+            {{ product.productDescription }}
+        </div>
+        <div class="details__product__price">
+            <p class="details__product__price__title">{{ product.productName }}</p>
+            <p class="details__product__price__money">{{ product.productPrice | currency:'BRL'}}</p>
+            <button class="details__product__price__button" (click)="selectedProduct()">Adicionar ao carrinho</button>
+        </div>
+    </section>
+</section>

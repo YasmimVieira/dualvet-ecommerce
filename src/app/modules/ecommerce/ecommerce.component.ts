@@ -32,7 +32,8 @@ export class EcommerceComponent implements OnInit {
     })
   }
 
-  public selectedProduct(value: string): void {
+  public selectedProduct(value: Products): void {
+    localStorage.setItem('product', JSON.stringify(value));
     this.router.navigate([PageRoutes.PRODUCT_DETAILS]);
   }
 
