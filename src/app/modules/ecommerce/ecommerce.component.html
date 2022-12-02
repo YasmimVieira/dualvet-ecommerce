@@ -5,7 +5,7 @@
         <section class="card" *ngFor="let product of products">
             <img src="./../../../assets/petlove.webp" alt="" class="card__image">
             <p class="card__description">{{ product.productName }}</p>
-            <p class="card__description">{{ product.productPrice | currency:'BRL' }}</p>
+            <p class="card__description--price">{{ product.productPrice | currency:'BRL' }}</p>
             <button class="card__button" (click)="selectedProduct(product)">Comprar</button>
         </section>
     </section>

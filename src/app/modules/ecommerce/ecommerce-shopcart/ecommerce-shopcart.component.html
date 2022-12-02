@@ -1,1 +1,16 @@
-<p>ecommerce-shopcart works!</p>
+<app-navbar></app-navbar>
+<section class="shop">
+    <h3>Meu carrinho</h3>
+    <section class="shopcart">
+        <section class="shopcart__card">
+            <img src="./../../../../assets/petlove.webp" alt="">
+            <div class="shopcart__header">
+                <header>
+                    <p>{{ productInfos.productName }}</p>
+                    <p class="shopcart__price">{{ productInfos.productPrice | currency:'BRL'}}</p>
+                    <button class="shopcart__button">Comprar</button>
+                </header>
+            </div>
+        </section>
+    </section>
+</section>

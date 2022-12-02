@@ -6,6 +6,7 @@
     &__list {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
 
@@ -13,7 +14,7 @@
 .card {
     margin: 1rem;
     height: auto;
-    width: 20%;
+    width: 15%;
     text-align: center;
     border: 2px solid $yellow;
     padding: 1rem;
@@ -21,13 +22,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
     &__description {
         font-size: 0.9rem;
+
+        &--price {
+            font-weight: $bold;
+        }
     }
 
     &__image {
-        width:100%;
+        width: 70%;
         height: 40%;
     }
 

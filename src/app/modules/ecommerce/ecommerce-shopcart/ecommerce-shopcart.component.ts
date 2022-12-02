@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Products } from 'src/app/interface/products.interface';
 
 @Component({
   selector: 'app-ecommerce-shopcart',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EcommerceShopcartComponent implements OnInit {
 
+  productInfos: Products;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.getProductInformations();
+  }
+
+  private getProductInformations(): void {
+    this.productInfos = JSON.parse(localStorage.getItem('product'));
   }
 
 }
